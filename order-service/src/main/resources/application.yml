@@ -5,7 +5,7 @@ spring:
     name: order-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///seata_demo
+    url: jdbc:mysql:///seata_demo?serverTimezone=UTC
     username: root
     password: root
   cloud:
