@@ -29,7 +29,6 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    @Transactional
     @GlobalTransactional
     public Long create(Order order) {
         // 创建订单
