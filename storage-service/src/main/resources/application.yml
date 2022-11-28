@@ -5,7 +5,7 @@ spring:
     name: storage-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///seata_demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false?serverTimezone=GMT
+    url: jdbc:mysql:///seata_demo?serverTimezone=UTC
     username: root
     password: root
   cloud:

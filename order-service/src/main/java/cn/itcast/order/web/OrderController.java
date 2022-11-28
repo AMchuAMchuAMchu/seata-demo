@@ -5,6 +5,7 @@ import cn.itcast.order.service.OrderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 虎哥
  */
 @RestController
-@RequestMapping("order")
+@RequestMapping("/order")
 public class OrderController {
 
     private final OrderService orderService;
