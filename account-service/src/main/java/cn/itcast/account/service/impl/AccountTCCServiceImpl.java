@@ -9,6 +9,7 @@ import io.seata.rm.tcc.api.BusinessActionContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Description ==> TODO
@@ -29,6 +30,7 @@ public class AccountTCCServiceImpl implements AccountTCCService {
     private AccountFreezeMapper freezeMapper;
 
     @Override
+    @Transactional
     public void deduct(String userId, int money) {
 
         String xid = RootContext.getXID();
